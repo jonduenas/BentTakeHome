@@ -8,12 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		65917C282A4751B300272D88 /* BentTakeHomeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65917C272A4751B300272D88 /* BentTakeHomeApp.swift */; };
-		65917C2A2A4751B300272D88 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65917C292A4751B300272D88 /* ContentView.swift */; };
 		65917C2C2A4751B400272D88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65917C2B2A4751B400272D88 /* Assets.xcassets */; };
 		65917C2F2A4751B400272D88 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65917C2E2A4751B400272D88 /* Preview Assets.xcassets */; };
 		65917C392A4751B400272D88 /* BentTakeHomeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65917C382A4751B400272D88 /* BentTakeHomeTests.swift */; };
 		65917C432A4751B400272D88 /* BentTakeHomeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65917C422A4751B400272D88 /* BentTakeHomeUITests.swift */; };
 		65917C452A4751B400272D88 /* BentTakeHomeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65917C442A4751B400272D88 /* BentTakeHomeUITestsLaunchTests.swift */; };
+		65917C532A47528200272D88 /* Color+Branding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65917C522A47528200272D88 /* Color+Branding.swift */; };
+		65917C562A4753CF00272D88 /* Community.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65917C552A4753CF00272D88 /* Community.swift */; };
+		65917C582A47545400272D88 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65917C572A47545400272D88 /* User.swift */; };
+		65917C5A2A47573A00272D88 /* BentPrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65917C592A47573A00272D88 /* BentPrimaryButton.swift */; };
+		65917C5D2A4757FD00272D88 /* LoggedOutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65917C5C2A4757FD00272D88 /* LoggedOutView.swift */; };
+		65917C5F2A475B3000272D88 /* BentSecondaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65917C5E2A475B2F00272D88 /* BentSecondaryButton.swift */; };
+		65917C632A47605100272D88 /* LoggedOutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65917C622A47605100272D88 /* LoggedOutViewModel.swift */; };
+		65917C652A4760DF00272D88 /* String+ImageAssets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65917C642A4760DF00272D88 /* String+ImageAssets.swift */; };
+		65917C672A4761E800272D88 /* NewUserRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65917C662A4761E800272D88 /* NewUserRootView.swift */; };
+		65917C692A47635A00272D88 /* NewUserRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65917C682A47635A00272D88 /* NewUserRouter.swift */; };
+		65917C6B2A476E3500272D88 /* UINavigationController+BackButtonDisplayMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65917C6A2A476E3500272D88 /* UINavigationController+BackButtonDisplayMode.swift */; };
+		65917C6E2A47763800272D88 /* InviteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65917C6D2A47763800272D88 /* InviteView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +47,6 @@
 /* Begin PBXFileReference section */
 		65917C242A4751B300272D88 /* BentTakeHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BentTakeHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65917C272A4751B300272D88 /* BentTakeHomeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BentTakeHomeApp.swift; sourceTree = "<group>"; };
-		65917C292A4751B300272D88 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		65917C2B2A4751B400272D88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		65917C2E2A4751B400272D88 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		65917C342A4751B400272D88 /* BentTakeHomeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BentTakeHomeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +54,18 @@
 		65917C3E2A4751B400272D88 /* BentTakeHomeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BentTakeHomeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		65917C422A4751B400272D88 /* BentTakeHomeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BentTakeHomeUITests.swift; sourceTree = "<group>"; };
 		65917C442A4751B400272D88 /* BentTakeHomeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BentTakeHomeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		65917C522A47528200272D88 /* Color+Branding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Branding.swift"; sourceTree = "<group>"; };
+		65917C552A4753CF00272D88 /* Community.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Community.swift; sourceTree = "<group>"; };
+		65917C572A47545400272D88 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		65917C592A47573A00272D88 /* BentPrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BentPrimaryButton.swift; sourceTree = "<group>"; };
+		65917C5C2A4757FD00272D88 /* LoggedOutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedOutView.swift; sourceTree = "<group>"; };
+		65917C5E2A475B2F00272D88 /* BentSecondaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BentSecondaryButton.swift; sourceTree = "<group>"; };
+		65917C622A47605100272D88 /* LoggedOutViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedOutViewModel.swift; sourceTree = "<group>"; };
+		65917C642A4760DF00272D88 /* String+ImageAssets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+ImageAssets.swift"; sourceTree = "<group>"; };
+		65917C662A4761E800272D88 /* NewUserRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewUserRootView.swift; sourceTree = "<group>"; };
+		65917C682A47635A00272D88 /* NewUserRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewUserRouter.swift; sourceTree = "<group>"; };
+		65917C6A2A476E3500272D88 /* UINavigationController+BackButtonDisplayMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+BackButtonDisplayMode.swift"; sourceTree = "<group>"; };
+		65917C6D2A47763800272D88 /* InviteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InviteView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +117,9 @@
 			isa = PBXGroup;
 			children = (
 				65917C272A4751B300272D88 /* BentTakeHomeApp.swift */,
-				65917C292A4751B300272D88 /* ContentView.swift */,
+				65917C5B2A4757B500272D88 /* NewUserFlow */,
+				65917C542A4753C300272D88 /* Models */,
+				65917C512A47526800272D88 /* Design */,
 				65917C2B2A4751B400272D88 /* Assets.xcassets */,
 				65917C2D2A4751B400272D88 /* Preview Content */,
 			);
@@ -125,6 +149,63 @@
 				65917C442A4751B400272D88 /* BentTakeHomeUITestsLaunchTests.swift */,
 			);
 			path = BentTakeHomeUITests;
+			sourceTree = "<group>";
+		};
+		65917C512A47526800272D88 /* Design */ = {
+			isa = PBXGroup;
+			children = (
+				65917C522A47528200272D88 /* Color+Branding.swift */,
+				65917C6A2A476E3500272D88 /* UINavigationController+BackButtonDisplayMode.swift */,
+				65917C642A4760DF00272D88 /* String+ImageAssets.swift */,
+				65917C602A475BDA00272D88 /* ButtonStyles */,
+			);
+			path = Design;
+			sourceTree = "<group>";
+		};
+		65917C542A4753C300272D88 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				65917C552A4753CF00272D88 /* Community.swift */,
+				65917C572A47545400272D88 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		65917C5B2A4757B500272D88 /* NewUserFlow */ = {
+			isa = PBXGroup;
+			children = (
+				65917C682A47635A00272D88 /* NewUserRouter.swift */,
+				65917C662A4761E800272D88 /* NewUserRootView.swift */,
+				65917C6C2A47762000272D88 /* InviteView */,
+				65917C612A475FC600272D88 /* LoggedOutView */,
+			);
+			path = NewUserFlow;
+			sourceTree = "<group>";
+		};
+		65917C602A475BDA00272D88 /* ButtonStyles */ = {
+			isa = PBXGroup;
+			children = (
+				65917C592A47573A00272D88 /* BentPrimaryButton.swift */,
+				65917C5E2A475B2F00272D88 /* BentSecondaryButton.swift */,
+			);
+			path = ButtonStyles;
+			sourceTree = "<group>";
+		};
+		65917C612A475FC600272D88 /* LoggedOutView */ = {
+			isa = PBXGroup;
+			children = (
+				65917C5C2A4757FD00272D88 /* LoggedOutView.swift */,
+				65917C622A47605100272D88 /* LoggedOutViewModel.swift */,
+			);
+			path = LoggedOutView;
+			sourceTree = "<group>";
+		};
+		65917C6C2A47762000272D88 /* InviteView */ = {
+			isa = PBXGroup;
+			children = (
+				65917C6D2A47763800272D88 /* InviteView.swift */,
+			);
+			path = InviteView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +338,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65917C2A2A4751B300272D88 /* ContentView.swift in Sources */,
+				65917C672A4761E800272D88 /* NewUserRootView.swift in Sources */,
+				65917C5D2A4757FD00272D88 /* LoggedOutView.swift in Sources */,
+				65917C532A47528200272D88 /* Color+Branding.swift in Sources */,
+				65917C5F2A475B3000272D88 /* BentSecondaryButton.swift in Sources */,
 				65917C282A4751B300272D88 /* BentTakeHomeApp.swift in Sources */,
+				65917C632A47605100272D88 /* LoggedOutViewModel.swift in Sources */,
+				65917C6B2A476E3500272D88 /* UINavigationController+BackButtonDisplayMode.swift in Sources */,
+				65917C652A4760DF00272D88 /* String+ImageAssets.swift in Sources */,
+				65917C692A47635A00272D88 /* NewUserRouter.swift in Sources */,
+				65917C582A47545400272D88 /* User.swift in Sources */,
+				65917C6E2A47763800272D88 /* InviteView.swift in Sources */,
+				65917C562A4753CF00272D88 /* Community.swift in Sources */,
+				65917C5A2A47573A00272D88 /* BentPrimaryButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,6 +515,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDarkContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -452,6 +545,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDarkContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

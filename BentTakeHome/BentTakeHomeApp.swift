@@ -11,7 +11,7 @@ import SwiftUI
 struct BentTakeHomeApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NewUserRootView()
         }
     }
 }
