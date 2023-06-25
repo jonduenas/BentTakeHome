@@ -24,22 +24,9 @@ struct NewUserRootView: View {
                 }
         }
         .backgroundStyle(Color.bentSortaBlack)
+        .foregroundStyle(Color.bentKindaWhite)
         .environmentObject(router)
         .tint(.bentKindaWhite)
-    }
-}
-
-extension View {
-    func bentTitleToolbar() -> some View {
-        self.navigationBarTitleDisplayMode(.inline)
-            .toolbar {
-                ToolbarItem(placement: .principal) {
-                    Image(.bentLogoTextAsset)
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .padding(12)
-                }
-            }
     }
 }
 

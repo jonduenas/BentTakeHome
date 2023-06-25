@@ -16,6 +16,26 @@ struct User: Identifiable, Codable {
     var pronouns: [Pronouns]
     var location: String? // This might be modeled differently based on how the backend stores it
     var profilePhotoURL: URL?
+
+    init(
+        id: UUID = UUID(),
+        name: String = "",
+        phoneNumber: String = "",
+        email: String = "",
+        birthDate: Date = .now,
+        pronouns: [User.Pronouns] = [],
+        location: String? = nil,
+        profilePhotoURL: URL? = nil
+    ) {
+        self.id = id
+        self.name = name
+        self.phoneNumber = phoneNumber
+        self.email = email
+        self.birthDate = birthDate
+        self.pronouns = pronouns
+        self.location = location
+        self.profilePhotoURL = profilePhotoURL
+    }
 }
 
 extension User {

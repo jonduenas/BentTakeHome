@@ -8,7 +8,11 @@
 import SwiftUI
 
 struct InviteView: View {
-    @State private var inviteCode: String = ""
+    @StateObject private var viewModel = InviteViewModel()
+    @EnvironmentObject private var communityRepository: CommunityRepository
+
+    @FocusState private var textFieldFocused: Bool
+
     var body: some View {
         ScrollView {
             VStack {
@@ -18,9 +22,14 @@ struct InviteView: View {
 
                 Text("Bent requires an invitation from an existing community to get started.")
 
-                TextField("Invite Code", text: $inviteCode, prompt: Text("Enter your invite code..."))
-                    .multilineTextAlignment(.leading)
-                    .textFieldStyle(.roundedBorder)
+                TextField(
+                    "Invite Code",
+                    text: $viewModel.inviteCode,
+                    prompt: Text("Enter your invite code...")
+                )
+                .multilineTextAlignment(.leading)
+                .textFieldStyle(.roundedBorder)
+                .focused($textFieldFocused)
 
                 Text("Don’t have an invite? Learn what you can do.")
                     .font(.caption)
@@ -30,13 +39,19 @@ struct InviteView: View {
             .multilineTextAlignment(.center)
         }
         .background()
-        .foregroundColor(.bentKindaWhite)
         .safeAreaInset(edge: .bottom) {
             Button("Next") {
 
             }
             .buttonStyle(BentPrimaryButton())
             .padding()
+        }
+        .onAppear {
+            if viewModel.communityRepository == nil {
+                viewModel.communityRepository = communityRepository
+            }
+
+            textFieldFocused = true
         }
     }
 }
@@ -45,5 +60,6 @@ struct InviteView_Previews: PreviewProvider {
     static var previews: some View {
         InviteView()
             .preferredColorScheme(.dark)
+            .environmentObject(CommunityRepository(service: CommunityServiceMock()))
     }
 }

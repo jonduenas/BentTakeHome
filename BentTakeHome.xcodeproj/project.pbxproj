@@ -25,6 +25,15 @@
 		65917C692A47635A00272D88 /* NewUserRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65917C682A47635A00272D88 /* NewUserRouter.swift */; };
 		65917C6B2A476E3500272D88 /* UINavigationController+BackButtonDisplayMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65917C6A2A476E3500272D88 /* UINavigationController+BackButtonDisplayMode.swift */; };
 		65917C6E2A47763800272D88 /* InviteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65917C6D2A47763800272D88 /* InviteView.swift */; };
+		65917C712A48863700272D88 /* View+BentTitleToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65917C702A48863700272D88 /* View+BentTitleToolbar.swift */; };
+		65917C732A4886CE00272D88 /* NewUserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65917C722A4886CE00272D88 /* NewUserRepository.swift */; };
+		65917C762A48879400272D88 /* NewUserServing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65917C752A48879400272D88 /* NewUserServing.swift */; };
+		65917C782A4887AD00272D88 /* NewUserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65917C772A4887AD00272D88 /* NewUserService.swift */; };
+		65917C7A2A488C2400272D88 /* InviteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65917C792A488C2400272D88 /* InviteViewModel.swift */; };
+		65917C7C2A488C8400272D88 /* CommunityRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65917C7B2A488C8400272D88 /* CommunityRepository.swift */; };
+		65917C812A488DAD00272D88 /* CommunityServing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65917C802A488DAD00272D88 /* CommunityServing.swift */; };
+		65917C832A488DBF00272D88 /* CommunityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65917C822A488DBF00272D88 /* CommunityService.swift */; };
+		65917C852A488EB200272D88 /* CommunityServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65917C842A488EB200272D88 /* CommunityServiceMock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +75,15 @@
 		65917C682A47635A00272D88 /* NewUserRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewUserRouter.swift; sourceTree = "<group>"; };
 		65917C6A2A476E3500272D88 /* UINavigationController+BackButtonDisplayMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+BackButtonDisplayMode.swift"; sourceTree = "<group>"; };
 		65917C6D2A47763800272D88 /* InviteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InviteView.swift; sourceTree = "<group>"; };
+		65917C702A48863700272D88 /* View+BentTitleToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+BentTitleToolbar.swift"; sourceTree = "<group>"; };
+		65917C722A4886CE00272D88 /* NewUserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewUserRepository.swift; sourceTree = "<group>"; };
+		65917C752A48879400272D88 /* NewUserServing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewUserServing.swift; sourceTree = "<group>"; };
+		65917C772A4887AD00272D88 /* NewUserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewUserService.swift; sourceTree = "<group>"; };
+		65917C792A488C2400272D88 /* InviteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InviteViewModel.swift; sourceTree = "<group>"; };
+		65917C7B2A488C8400272D88 /* CommunityRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityRepository.swift; sourceTree = "<group>"; };
+		65917C802A488DAD00272D88 /* CommunityServing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityServing.swift; sourceTree = "<group>"; };
+		65917C822A488DBF00272D88 /* CommunityService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityService.swift; sourceTree = "<group>"; };
+		65917C842A488EB200272D88 /* CommunityServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityServiceMock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,11 +135,13 @@
 			isa = PBXGroup;
 			children = (
 				65917C272A4751B300272D88 /* BentTakeHomeApp.swift */,
-				65917C5B2A4757B500272D88 /* NewUserFlow */,
-				65917C542A4753C300272D88 /* Models */,
-				65917C512A47526800272D88 /* Design */,
 				65917C2B2A4751B400272D88 /* Assets.xcassets */,
+				65917C7D2A488D4800272D88 /* Communities */,
+				65917C512A47526800272D88 /* Design */,
+				65917C542A4753C300272D88 /* Models */,
+				65917C5B2A4757B500272D88 /* NewUserFlow */,
 				65917C2D2A4751B400272D88 /* Preview Content */,
+				65917C7E2A488D5600272D88 /* Users */,
 			);
 			path = BentTakeHome;
 			sourceTree = "<group>";
@@ -154,6 +174,7 @@
 		65917C512A47526800272D88 /* Design */ = {
 			isa = PBXGroup;
 			children = (
+				65917C6F2A48862200272D88 /* ViewExtensions */,
 				65917C522A47528200272D88 /* Color+Branding.swift */,
 				65917C6A2A476E3500272D88 /* UINavigationController+BackButtonDisplayMode.swift */,
 				65917C642A4760DF00272D88 /* String+ImageAssets.swift */,
@@ -165,8 +186,6 @@
 		65917C542A4753C300272D88 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				65917C552A4753CF00272D88 /* Community.swift */,
-				65917C572A47545400272D88 /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -174,8 +193,8 @@
 		65917C5B2A4757B500272D88 /* NewUserFlow */ = {
 			isa = PBXGroup;
 			children = (
-				65917C682A47635A00272D88 /* NewUserRouter.swift */,
 				65917C662A4761E800272D88 /* NewUserRootView.swift */,
+				65917C682A47635A00272D88 /* NewUserRouter.swift */,
 				65917C6C2A47762000272D88 /* InviteView */,
 				65917C612A475FC600272D88 /* LoggedOutView */,
 			);
@@ -204,8 +223,56 @@
 			isa = PBXGroup;
 			children = (
 				65917C6D2A47763800272D88 /* InviteView.swift */,
+				65917C792A488C2400272D88 /* InviteViewModel.swift */,
 			);
 			path = InviteView;
+			sourceTree = "<group>";
+		};
+		65917C6F2A48862200272D88 /* ViewExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				65917C702A48863700272D88 /* View+BentTitleToolbar.swift */,
+			);
+			path = ViewExtensions;
+			sourceTree = "<group>";
+		};
+		65917C742A48877600272D88 /* NewUserService */ = {
+			isa = PBXGroup;
+			children = (
+				65917C752A48879400272D88 /* NewUserServing.swift */,
+				65917C772A4887AD00272D88 /* NewUserService.swift */,
+			);
+			path = NewUserService;
+			sourceTree = "<group>";
+		};
+		65917C7D2A488D4800272D88 /* Communities */ = {
+			isa = PBXGroup;
+			children = (
+				65917C552A4753CF00272D88 /* Community.swift */,
+				65917C7B2A488C8400272D88 /* CommunityRepository.swift */,
+				65917C7F2A488D9900272D88 /* CommunityService */,
+			);
+			path = Communities;
+			sourceTree = "<group>";
+		};
+		65917C7E2A488D5600272D88 /* Users */ = {
+			isa = PBXGroup;
+			children = (
+				65917C722A4886CE00272D88 /* NewUserRepository.swift */,
+				65917C572A47545400272D88 /* User.swift */,
+				65917C742A48877600272D88 /* NewUserService */,
+			);
+			path = Users;
+			sourceTree = "<group>";
+		};
+		65917C7F2A488D9900272D88 /* CommunityService */ = {
+			isa = PBXGroup;
+			children = (
+				65917C802A488DAD00272D88 /* CommunityServing.swift */,
+				65917C822A488DBF00272D88 /* CommunityService.swift */,
+				65917C842A488EB200272D88 /* CommunityServiceMock.swift */,
+			);
+			path = CommunityService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -340,15 +407,24 @@
 			files = (
 				65917C672A4761E800272D88 /* NewUserRootView.swift in Sources */,
 				65917C5D2A4757FD00272D88 /* LoggedOutView.swift in Sources */,
+				65917C832A488DBF00272D88 /* CommunityService.swift in Sources */,
 				65917C532A47528200272D88 /* Color+Branding.swift in Sources */,
+				65917C782A4887AD00272D88 /* NewUserService.swift in Sources */,
+				65917C852A488EB200272D88 /* CommunityServiceMock.swift in Sources */,
+				65917C812A488DAD00272D88 /* CommunityServing.swift in Sources */,
 				65917C5F2A475B3000272D88 /* BentSecondaryButton.swift in Sources */,
 				65917C282A4751B300272D88 /* BentTakeHomeApp.swift in Sources */,
 				65917C632A47605100272D88 /* LoggedOutViewModel.swift in Sources */,
+				65917C762A48879400272D88 /* NewUserServing.swift in Sources */,
 				65917C6B2A476E3500272D88 /* UINavigationController+BackButtonDisplayMode.swift in Sources */,
 				65917C652A4760DF00272D88 /* String+ImageAssets.swift in Sources */,
+				65917C712A48863700272D88 /* View+BentTitleToolbar.swift in Sources */,
+				65917C7C2A488C8400272D88 /* CommunityRepository.swift in Sources */,
+				65917C7A2A488C2400272D88 /* InviteViewModel.swift in Sources */,
 				65917C692A47635A00272D88 /* NewUserRouter.swift in Sources */,
 				65917C582A47545400272D88 /* User.swift in Sources */,
 				65917C6E2A47763800272D88 /* InviteView.swift in Sources */,
+				65917C732A4886CE00272D88 /* NewUserRepository.swift in Sources */,
 				65917C562A4753CF00272D88 /* Community.swift in Sources */,
 				65917C5A2A47573A00272D88 /* BentPrimaryButton.swift in Sources */,
 			);

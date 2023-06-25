@@ -25,7 +25,7 @@ struct LoggedOutView: View {
                 .padding()
                 .font(.title2)
                 .fontWeight(.bold)
-                .foregroundColor(.bentKindaWhite)
+//                .foregroundColor(.bentKindaWhite)
                 .multilineTextAlignment(.center)
                 .dynamicTypeSize(.xSmall ... .accessibility3)
 
@@ -48,9 +48,9 @@ struct LoggedOutView: View {
             }
             .buttonStyle(BentSecondaryButton())
         }
-        .background()
         .padding(.horizontal, 24)
         .padding(.vertical, 12)
+        .background()
         .onAppear {
             viewModel.router = router
         }

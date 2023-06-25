@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct BentTakeHomeApp: App {
+    @StateObject private var communityRepository = CommunityRepository()
+
     var body: some Scene {
         WindowGroup {
             NewUserRootView()
+                .environmentObject(communityRepository)
         }
     }
 }
