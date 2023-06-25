@@ -7,4 +7,6 @@
 
 import Foundation
 
-protocol CommunityServing {}
+protocol CommunityServing {
+    func getCommunity(with inviteCode: String) async throws -> Community?
+}

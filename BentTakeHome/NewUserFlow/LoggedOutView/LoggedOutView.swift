@@ -25,7 +25,6 @@ struct LoggedOutView: View {
                 .padding()
                 .font(.title2)
                 .fontWeight(.bold)
-//                .foregroundColor(.bentKindaWhite)
                 .multilineTextAlignment(.center)
                 .dynamicTypeSize(.xSmall ... .accessibility3)
 

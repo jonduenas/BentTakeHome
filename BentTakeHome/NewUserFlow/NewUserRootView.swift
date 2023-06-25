@@ -20,6 +20,8 @@ struct NewUserRootView: View {
                         InviteView()
                     case .logIn:
                         Text("Log In")
+                    case .inviteConfirmation(let community):
+                        Text(community.name)
                     }
                 }
         }

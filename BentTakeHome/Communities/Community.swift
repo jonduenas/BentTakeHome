@@ -7,8 +7,9 @@
 
 import Foundation
 
-struct Community: Identifiable, Codable {
+struct Community: Identifiable, Equatable, Hashable, Codable {
     let id: UUID
     let name: String
     let members: [User]
+    let inviteCode: String
 }

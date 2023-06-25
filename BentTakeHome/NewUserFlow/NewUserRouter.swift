@@ -12,7 +12,7 @@ final class NewUserRouter: ObservableObject {
     enum Route: Hashable {
         case logIn
         case invite
-        //    case inviteConfirmation
+        case inviteConfirmation(Community)
         //    case createAccount
         // This would eventually be filled with more routes
     }

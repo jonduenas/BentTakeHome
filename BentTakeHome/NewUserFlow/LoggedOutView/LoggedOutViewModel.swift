@@ -10,6 +10,9 @@ import Foundation
 @MainActor
 final class LoggedOutViewModel: ObservableObject {
     var router: NewUserRouter?
+
+    // Quick and easy way to add a link inline with a string. But has downsides, like launching in
+    // default Safari app only, making your user leave your app. Also can't add underline.
     let termsAndConditions: AttributedString = {
         do {
             let string = try AttributedString(
@@ -22,6 +25,7 @@ final class LoggedOutViewModel: ObservableObject {
             )
             return string
         } catch {
+            print(error)
             return ""
         }
     }()
