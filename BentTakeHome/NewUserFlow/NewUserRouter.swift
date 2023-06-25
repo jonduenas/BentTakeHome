@@ -18,4 +18,12 @@ final class NewUserRouter: ObservableObject {
     }
 
     @Published var path: [Route] = []
+
+    func push(_ route: Route) {
+        path.append(route)
+    }
+
+    func popToRoot() {
+        path = []
+    }
 }

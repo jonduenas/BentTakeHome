@@ -15,6 +15,7 @@ struct BentSecondaryButton: ButtonStyle {
             .foregroundColor(.bentMint)
             .padding(.horizontal, 20)
             .padding(.vertical, 14)
+            .opacity(configuration.isPressed ? 0.7 : 1)
     }
 }
 

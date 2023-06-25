@@ -57,7 +57,7 @@ final class InviteViewModel: ObservableObject {
                 switch state {
                 case .ready, .loading: break
                 case .loaded(let community):
-                    router?.path.append(.inviteConfirmation(community))
+                    router?.push(.inviteConfirmation(community))
                 case .error(let error):
                     self.error = error
                     errorAlertIsPresented = true
@@ -82,6 +82,8 @@ final class InviteViewModel: ObservableObject {
 
     private func getCommunity() {
         guard let communityRepository, !loadingState.isLoading else { return }
+
+        inviteCode = inviteCode.trimmingCharacters(in: .whitespacesAndNewlines)
 
         Task {
             loadingState = .loading

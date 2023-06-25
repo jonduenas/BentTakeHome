@@ -7,7 +7,7 @@
 
 import Foundation
 
-/// Intended to be responsible for creating, providing, and managing a new user. It would abstract
+/// Intended to be responsible for creating, providing, and managing a community. It would abstract
 /// the implementation details of the service layer, allowing us to inject whatever we want
 /// that conforms to CommunityServing.
 final class CommunityRepository: ObservableObject {

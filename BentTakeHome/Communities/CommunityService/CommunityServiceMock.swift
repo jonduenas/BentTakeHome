@@ -15,7 +15,13 @@ class CommunityServiceMock: CommunityServing {
         inviteCode: "SUPERGAY"
     )
 
+    var expectedError: Error? = nil
+
     func getCommunity(with inviteCode: String) async throws -> Community? {
-        return expectedCommunity
+        if let expectedError {
+            throw expectedError
+        } else {
+            return expectedCommunity
+        }
     }
 }

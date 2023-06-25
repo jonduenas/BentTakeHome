@@ -10,13 +10,14 @@ import SwiftUI
 struct BentPrimaryButton: ButtonStyle {
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
-            .font(.title3).bold()
+            .font(.title3)
+            .fontWeight(.bold)
             .foregroundColor(.bentSortaBlack)
             .padding(.horizontal, 20)
             .padding(.vertical, 14)
             .frame(maxWidth: .infinity)
-            .background(Color.bentMint)
-            .cornerRadius(14)
+            .background(Color.bentMint, in: RoundedRectangle(cornerRadius: 14))
+            .opacity(configuration.isPressed ? 0.7 : 1)
     }
 }
 

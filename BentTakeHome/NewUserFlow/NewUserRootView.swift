@@ -35,5 +35,6 @@ struct NewUserRootView: View {
 struct NewUserRootView_Previews: PreviewProvider {
     static var previews: some View {
         NewUserRootView()
+            .environmentObject(CommunityRepository(service: CommunityServiceMock()))
     }
 }

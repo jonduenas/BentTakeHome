@@ -30,11 +30,15 @@ final class LoggedOutViewModel: ObservableObject {
         }
     }()
 
+    init(router: NewUserRouter? = nil) {
+        self.router = router
+    }
+
     func didTapSignUp() {
-        router?.path.append(.invite)
+        router?.push(.invite)
     }
 
     func didTapLogIn() {
-        router?.path.append(.logIn)
+        router?.push(.logIn)
     }
 }
