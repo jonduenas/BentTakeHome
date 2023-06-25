@@ -48,10 +48,9 @@ struct LoggedOutView: View {
             }
             .buttonStyle(BentSecondaryButton())
         }
+        .background()
         .padding(.horizontal, 24)
         .padding(.vertical, 12)
-        .background(ignoresSafeAreaEdges: .all)
-        .backgroundStyle(Color.bentSortaBlack)
         .onAppear {
             viewModel.router = router
         }
@@ -62,5 +61,6 @@ struct LoggedOutView_Previews: PreviewProvider {
     static var previews: some View {
         LoggedOutView()
             .environmentObject(NewUserRouter())
+            .preferredColorScheme(.dark)
     }
 }

@@ -23,6 +23,7 @@ struct NewUserRootView: View {
                     }
                 }
         }
+        .backgroundStyle(Color.bentSortaBlack)
         .environmentObject(router)
         .tint(.bentKindaWhite)
     }

@@ -29,9 +29,8 @@ struct InviteView: View {
             .padding()
             .multilineTextAlignment(.center)
         }
-        .background(ignoresSafeAreaEdges: .all)
+        .background()
         .foregroundColor(.bentKindaWhite)
-        .backgroundStyle(Color.bentSortaBlack)
         .safeAreaInset(edge: .bottom) {
             Button("Next") {
 
@@ -45,5 +44,6 @@ struct InviteView: View {
 struct InviteView_Previews: PreviewProvider {
     static var previews: some View {
         InviteView()
+            .preferredColorScheme(.dark)
     }
 }
