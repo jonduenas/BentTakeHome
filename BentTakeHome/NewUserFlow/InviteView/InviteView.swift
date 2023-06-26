@@ -64,6 +64,9 @@ struct InviteView: View {
             viewModel.router = router
             textFieldFocused = true
         }
+        .onDisappear {
+            viewModel.onDisappear()
+        }
     }
 
     private var nextButton: some View {

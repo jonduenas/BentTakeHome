@@ -48,12 +48,14 @@ final class InviteViewModel: ObservableObject {
     var router: NewUserRouter?
 
     private var cancellables: Set<AnyCancellable> = []
+    private var getCommunityTask: Task<Void, Never>?
 
     init() {
         $loadingState
             .dropFirst()
             .sink { [weak self] state in
-                guard let self else { return }
+                guard let self, getCommunityTask?.isCancelled != true else { return }
+
                 switch state {
                 case .ready, .loading: break
                 case .loaded(let community):
@@ -64,6 +66,10 @@ final class InviteViewModel: ObservableObject {
                 }
             }
             .store(in: &cancellables)
+    }
+
+    func onDisappear() {
+        getCommunityTask?.cancel()
     }
 
     func nextButtonTapped() {
@@ -85,11 +91,12 @@ final class InviteViewModel: ObservableObject {
 
         inviteCode = inviteCode.trimmingCharacters(in: .whitespacesAndNewlines)
 
-        Task {
+        getCommunityTask = Task {
             loadingState = .loading
 
             do {
                 let community = try await communityRepository.getCommunity(with: inviteCode)
+                try Task.checkCancellation()
                 loadingState = .loaded(community)
             } catch {
                 // More robust logging would be done here
