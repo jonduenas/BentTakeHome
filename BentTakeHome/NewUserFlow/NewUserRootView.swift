@@ -13,7 +13,6 @@ struct NewUserRootView: View {
     var body: some View {
         NavigationStack(path: $router.path) {
             LoggedOutView()
-                .preferredColorScheme(.dark)
                 .navigationDestination(for: NewUserRouter.Route.self) { route in
                     switch route {
                     case .invite:
@@ -25,6 +24,7 @@ struct NewUserRootView: View {
                     }
                 }
         }
+        .preferredColorScheme(.dark)
         .backgroundStyle(Color.bentSortaBlack)
         .foregroundStyle(Color.bentKindaWhite)
         .environmentObject(router)

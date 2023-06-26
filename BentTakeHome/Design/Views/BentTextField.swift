@@ -21,6 +21,7 @@ struct BentTextField<S: StringProtocol>: View {
     var body: some View {
         TextField(title, text: $text, prompt: prompt)
             .textFieldStyle(.plain)
+            .multilineTextAlignment(.leading)
             .padding(16)
             .background()
             .backgroundStyle(Color(uiColor: .systemGray5))

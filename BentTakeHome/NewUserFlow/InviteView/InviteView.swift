@@ -28,8 +28,6 @@ struct InviteView: View {
                     text: $viewModel.inviteCode,
                     prompt: Text("Enter your invite code...")
                 )
-                .multilineTextAlignment(.leading)
-                .textFieldStyle(.roundedBorder)
                 .focused($textFieldFocused)
                 .onSubmit {
                     viewModel.textFieldSubmitted()
