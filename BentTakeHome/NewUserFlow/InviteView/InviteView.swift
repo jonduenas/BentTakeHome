@@ -42,6 +42,7 @@ struct InviteView: View {
             .padding()
             .multilineTextAlignment(.center)
         }
+        .bentTitleToolbar()
         .background()
         .safeAreaInset(edge: .bottom) {
             nextButton

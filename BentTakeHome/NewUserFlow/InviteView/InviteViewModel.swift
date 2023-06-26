@@ -54,7 +54,7 @@ final class InviteViewModel: ObservableObject {
         $loadingState
             .dropFirst()
             .sink { [weak self] state in
-                guard let self, getCommunityTask?.isCancelled != true else { return }
+                guard let self else { return }
 
                 switch state {
                 case .ready, .loading: break
@@ -93,15 +93,19 @@ final class InviteViewModel: ObservableObject {
 
         getCommunityTask = Task {
             loadingState = .loading
+            let newState: LoadingState
 
             do {
                 let community = try await communityRepository.getCommunity(with: inviteCode)
-                try Task.checkCancellation()
-                loadingState = .loaded(community)
+                newState = .loaded(community)
             } catch {
                 // More robust logging would be done here
                 print(error)
-                loadingState = .error(error)
+                newState = .error(error)
+            }
+
+            if !Task.isCancelled {
+                loadingState = newState
             }
         }
     }
